@@ -53,8 +53,8 @@ The **Apache Log4j** vulnerability is a critical remote code execution (RCE) fla
 
 📧 **Security Advisory Email Draft**
 
-> **From:** AIG Cyber & Information Security Team
-> **To:** [product@email.com](mailto:product@email.com)
+> **From:** AIG Cyber & Information Security Team </br>
+> **To:** [product@email.com](mailto:product@email.com)</br>
 > **Subject:** Security Advisory Concerning Apache Log4j Zero-Day Vulnerability
 >
 > Hello Product Development Team,
@@ -70,7 +70,7 @@ The **Apache Log4j** vulnerability is a critical remote code execution (RCE) fla
 > **Remediation:**
 >
 > * Upgrade Log4j to version **2.17.1 or later** immediately.
-> * If upgrade isn’t feasible, remove the vulnerable class using:
+> * If upgrade isn’t feasible, remove the vulnerable class using:</br>
 >   `zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class`
 > * Monitor logs for abnormal LDAP/DNS requests.
 >
