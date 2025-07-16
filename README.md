@@ -76,7 +76,7 @@ The **Apache Log4j** vulnerability is a critical remote code execution (RCE) fla
 >
 > Please confirm completion of remediation or request support if needed.
 >
-> **Kind regards**,
+> **Kind regards**,</br>
 > *AIG Cyber & Information Security Team*
 
 ---
