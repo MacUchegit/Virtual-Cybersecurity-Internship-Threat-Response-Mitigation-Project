@@ -49,7 +49,7 @@ The **Apache Log4j** vulnerability is a critical remote code execution (RCE) fla
 * **Risk Factor:** High – Log4j is present, making the system vulnerable to remote exploitation.
 
 ---
-### Next is to draft a formal security advisory email to notify the Product Development Team about the critical Log4j vulnerability
+### Next step is to draft a formal security advisory email to notify the Product Development Team about the critical Log4j vulnerability
 ### 📧 **Security Advisory Email Draft**
 
 **From:** AIG Cyber & Information Security Team </br>
