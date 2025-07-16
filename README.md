@@ -50,38 +50,34 @@ The **Apache Log4j** vulnerability is a critical remote code execution (RCE) fla
 
 ---
 ### Next step is to draft a formal security advisory email to notify the Product Development Team about the critical Log4j vulnerability
-### 📧 **Security Advisory Email Draft**
 
-**From:** AIG Cyber & Information Security Team </br>
-**To:** [product@email.com](mailto:product@email.com)</br>
-**Subject:** Security Advisory Concerning Apache Log4j Zero-Day Vulnerability
+📧 **Security Advisory Email Draft**
 
----
-
-Hello Product Development Team,
-
-AIG Cyber & Information Security Team would like to inform you that a recent Apache Log4j vulnerability (**CVE-2021-44228**) has been discovered in the security community that may affect the **Product Development Staging Environment**.
-
-**Vulnerability Description:**
-This vulnerability exists in the Log4j library’s JNDI lookup feature and allows **unauthenticated remote code execution (RCE)** via specially crafted log messages.
-
-**Risk/Impact:**
-This is a **critical flaw actively exploited in the wild**. If left unaddressed, it may lead to **data exfiltration**, **ransomware infection**, or **complete system compromise**.
-
-**Remediation:**
-
-* Upgrade Log4j to version **2.17.1 or later** immediately.
-* If upgrade isn’t feasible, remove the vulnerable class:
-
-  ```
-  zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class
-  ```
-* Monitor logs for abnormal LDAP/DNS requests.
-
-Please confirm completion of remediation or request support if needed.
-
-Kind regards,
-**AIG Cyber & Information Security Team**
+> **From:** AIG Cyber & Information Security Team
+> **To:** [product@email.com](mailto:product@email.com)
+> **Subject:** Security Advisory Concerning Apache Log4j Zero-Day Vulnerability
+>
+> Hello Product Development Team,
+>
+> AIG Cyber & Information Security Team would like to inform you that a recent Apache Log4j vulnerability (**CVE-2021-44228**) has been discovered in the security community that may affect the **Product Development Staging Environment**.
+>
+> **Vulnerability Description:**
+> This vulnerability exists in the Log4j library’s JNDI lookup feature and allows unauthenticated remote code execution (RCE) via specially crafted log messages.
+>
+> **Risk/Impact:**
+> This is a critical flaw actively exploited in the wild. If left unaddressed, it may lead to data exfiltration, ransomware infection, or complete system compromise.
+>
+> **Remediation:**
+>
+> * Upgrade Log4j to version **2.17.1 or later** immediately.
+> * If upgrade isn’t feasible, remove the vulnerable class using:
+>   `zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class`
+> * Monitor logs for abnormal LDAP/DNS requests.
+>
+> Please confirm completion of remediation or request support if needed.
+>
+> **Kind regards**,
+> *AIG Cyber & Information Security Team*
 
 ---
 
